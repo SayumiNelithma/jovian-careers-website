@@ -1,11 +1,11 @@
-from flask import Flask
-from flask.ctx import F
+from flask import Flask, render_template
+
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Hello from Flask!'
+    return render_template('home.html')
 
 print(__name__)
 if __name__ == '__main__':
