@@ -1,6 +1,8 @@
+
 run = "python app.py"
 [nix]
 channel = "stable-24_05"
+enabledPackages = ["python3"]
 
 [deployment]
 run = ["sh", "-c", "python app.py"]
